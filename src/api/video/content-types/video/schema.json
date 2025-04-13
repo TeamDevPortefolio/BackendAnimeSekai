@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "Video",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "langues": {
+      "type": "enumeration",
+      "enum": [
+        "VO",
+        "VF",
+        "VE"
+      ]
+    },
+    "URL": {
+      "type": "string"
+    },
+    "episode": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::episode.episode"
+    }
+  }
+}

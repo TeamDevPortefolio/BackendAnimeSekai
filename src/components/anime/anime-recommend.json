@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_anime_anime_recommends",
+  "info": {
+    "displayName": "Recommends_anime",
+    "icon": "play",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "anime": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::anime.anime"
+    }
+  }
+}

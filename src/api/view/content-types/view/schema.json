@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "views",
+  "info": {
+    "singularName": "view",
+    "pluralName": "views",
+    "displayName": "View",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "view_count": {
+      "type": "integer"
+    },
+    "anime": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::anime.anime"
+    },
+    "ip": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animes",
+  "info": {
+    "singularName": "anime",
+    "pluralName": "animes",
+    "displayName": "Anime",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "notation": {
+      "type": "decimal",
+      "max": 5,
+      "min": 1
+    },
+    "highline_title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "recommande",
+        "vedette",
+        "regular"
+      ]
+    },
+    "gif": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "musique": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "episodes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::episode.episode"
+    },
+    "imgTitle": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "realease_date": {
+      "type": "date"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "genres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::genre.genre"
+    },
+    "season": {
+      "type": "enumeration",
+      "enum": [
+        "Spring",
+        "Winter",
+        "Fall",
+        "Summer"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_anime_last_realease_animes",
+  "info": {
+    "displayName": "Last_realease_anime",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "anime": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::anime.anime"
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}
